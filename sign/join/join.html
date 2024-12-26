@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">
+        <img src="../logo.png" alt="IEEE Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <div class="header">
+        <img src="../logo.png" alt="IEEE Logo">
+        <h1>Committee Selection Application Form</h1>
+        <p>Please fill out the form below to apply for a committee position in the IEEE student branch.</p>
+    </div>
+    <form id="application-form">
+        <div class="form-section">
+            <h2>Personal Information</h2>
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" minlength="10" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="university">University Name</label>
+                <input type="text" id="university" name="university" required>
+            </div>
+            <div class="form-group">
+                <label for="major">Major/Field of Study</label>
+                <input type="text" id="major" name="major" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year of Study</label>
+                <select id="year" name="year" required>
+                    <option value="Freshman">Preparatory (Engineering)</option>
+                    <option value="Sophomore">1</option>
+                    <option value="Junior">2</option>
+                    <option value="Senior">3</option>
+                    <option value="Graduate">4</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>Committee Preferences</h2>
+            <div class="form-group">
+                <div class="radio-group">
+                    <label><input type="radio" name="committee" value="Technical" required> Technical Committee</label>
+                    <label><input type="radio" name="committee" value="Event Management" required> Event Management</label>
+                    <label><input type="radio" name="committee" value="Public Relations" required> Public Relations</label>
+                    <label><input type="radio" name="committee" value="Marketing" required> Marketing Committee</label>
+                    <label><input type="radio" name="committee" value="Human Resources" required> Human Resources</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>Skills and Experience</h2>
+            <div class="form-group">
+                <label for="skills">Describe your relevant skills and past experiences (up to 300 words)</label>
+                <textarea id="skills" name="skills" rows="5" maxlength="300" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload Image</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>Questions</h2>
+            <div class="form-group">
+                <label for="motivation">Why are you interested in joining this committee? (max 150 words)</label>
+                <textarea id="motivation" name="motivation" rows="3" maxlength="150" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="contribution">How can your skills contribute to the committee’s goals? (max 200 words)</label>
+                <textarea id="contribution" name="contribution" rows="4" maxlength="200" required></textarea>
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>Availability</h2>
+            <div class="form-group">
+                <label><input type="checkbox" name="availability" required> I confirm my availability for meetings and events</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </div>
+    </form>
+</div>
+<script src="file.js"></script>
+</body>
+</html>
