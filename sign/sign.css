@@ -183,3 +183,67 @@ nav ul li a {
 .login-link a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar .nav-links li {
+        display: block;
+        text-align: center;
+    }
+
+    .login-container {
+        width: 90%;
+        margin-top: 30vw;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+    }
+    nav button{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo img {
+        height: 40px;
+    }
+    nav button{
+        display: none;
+    }
+
+    nav img{
+        width: 20vw;
+        height: 10vw;
+    }
+    .navbar .nav-links {
+        gap: 5px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 14px;
+    }
+
+    .login-container {
+        width: 100%;
+        margin-top: 40vw;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 0.9rem;
+    }
+
+    .btn-login {
+        font-size: 0.9rem;
+    }
+}
