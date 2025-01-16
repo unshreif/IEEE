@@ -4,8 +4,326 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application Form</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .navbar {
+            width: 100%;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            animation: slideDown 0.5s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 97%;
+        }
+        nav a {
+            margin: 1vw;
+            margin-bottom: 1vw;
+            text-decoration: none;
+            color: black;
+        }
+
+        nav a:hover{
+            font-weight: bold;
+            color: darkblue;
+        }
+        #join:hover{
+            color: white;
+            background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+            animation:slidebg 5s linear infinite;}
+        @keyframes slidebg {
+            to {
+                background-position:20vw;
+            }
+        }
+        nav ul{
+            margin-top:0vw;
+            margin-right: 1vw;
+            margin-top: 1vw;
+        }
+        #logo{
+            margin-top:0vw;
+            width: 5vw;
+            height: 5vw;
+            z-index: 1;
+        }
+
+        nav ul > button {
+            border-radius: 4vw;
+            color: black;
+            cursor: pointer;
+            margin-left: 1vw;
+            background-color: none;
+            border: 1px solid white;
+            width: 4vw;
+            height: 3vh;
+        }
+
+        ul li{
+            line-height: 2vw;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: white(141, 16, 16, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+            z-index: 1000;
+            height: 4vw;
+            border-radius: 0vw 0vw 3vw 3vw;
+        }
+
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            margin-top: 80px;
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header {
+            text-align: center;
+            animation: zoomIn 0.5s ease-in-out;
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .header img {
+            height: 100px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #00457c;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+            animation: fadeInLeft 0.5s ease-in-out;
+        }
+
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .form-section h2 {
+            font-size: 1.8rem;
+            color: #00457c;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+            transition: color 0.3s;
+        }
+
+        .form-group label:hover {
+            color: #00457c;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #00457c;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .form-group input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #00457c;
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            margin-right: 10px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form-group input[type="checkbox"]:checked::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background-color: #00457c;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .form-group input[type="checkbox"]:hover {
+            border-color: blue;
+            box-shadow: 0 0 5px #01014c;
+        }
+
+        .form-group label {
+            display: flex;
+            align-items: center;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px 15px;
+            background: #00457c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+
+        .submit-btn:hover {
+            background: #003366;
+            transform: scale(1.05);
+        }
+
+        input.valid, textarea.valid, select.valid {
+            border-color: #28a745;
+        }
+
+        input.invalid, textarea.invalid, select.invalid {
+            border-color: #dc3545;
+        }
+
+        @media (min-width: 768px) {
+            .login-container {
+                width: 70%;
+                margin-top: 10vw;
+            }
+
+            .form-group input,
+            .form-group select {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .login-container {
+                width: 90%;
+                margin-top: 20vw;
+            }
+
+            .form-group input,
+            .form-group select {
+                width: 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
 <nav class="head">
