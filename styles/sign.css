@@ -60,7 +60,7 @@ nav ul{
 }
 #logo{
     margin-top:0vw;
-    height: 4vw;
+    height: 5vw;
     z-index: 1;
 }
 
@@ -209,15 +209,11 @@ nav ul li a {
 }
 
 @media (max-width: 480px) {
-    .navbar .logo img {
-        height: 40px;
-    }
     nav button{
         display: none;
     }
 
-    nav img{
-        width: 25vw;
+    #logo{
         height: 10vw;
     }
     .navbar .nav-links {
