@@ -1,6 +1,6 @@
 # IEEE KSB
 
-![logo](https://ucarecdn.com/aa1c9b86-1515-4617-995f-cc85ed51c182/logo2.png)
+![logo](https://ucarecdn.com/aa1c9b86-1515-4617-995f-cc85ed51c182/-/scale_crop/300x300/)
 
 Welcome to the **IEEE One** website! This project is a modern, responsive web application showcasing information about IEEE and its various activities and events. The website is hosted on **Vercel** and can be accessed [here](https://ieee-one.vercel.app/).
 
