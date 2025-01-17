@@ -40,8 +40,7 @@
             to { transform: translateY(0); }
         }
 
-
-        nav{
+        nav {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -54,32 +53,33 @@
             color: black;
         }
 
-        nav a:hover{
+        nav a:hover {
             font-weight: bold;
             color: darkblue;
         }
-        #join:hover{
+        #join:hover {
             color: white;
             background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-            animation:slidebg 5s linear infinite;}
+            animation: slidebg 5s linear infinite;
+        }
         @keyframes slidebg {
             to {
-                background-position:20vw;
+                background-position: 20vw;
             }
         }
-        nav ul{
-            margin-top:0vw;
+        nav ul {
+            margin-top: 0vw;
             margin-right: 1vw;
             margin-top: 1vw;
         }
-        #logo{
-            margin-top:0vw;
+        #logo {
+            margin-top: 0vw;
             width: 5vw;
             height: 5vw;
             z-index: 1;
         }
 
-        nav ul > button {
+        #join {
             border-radius: 4vw;
             color: black;
             cursor: pointer;
@@ -90,7 +90,7 @@
             height: 3vh;
         }
 
-        ul li{
+        ul li {
             line-height: 2vw;
         }
         nav {
@@ -103,7 +103,6 @@
             height: 4vw;
             border-radius: 0vw 0vw 3vw 3vw;
         }
-
 
         nav ul {
             list-style-type: none;
@@ -174,7 +173,6 @@
             margin-bottom: 10px;
             transition: color 0.3s;
         }
-
 
         .form-group {
             margin-bottom: 15px;
@@ -293,10 +291,6 @@
                 margin-top: 10vw;
             }
 
-            .form-group input,
-            .form-group select {
-                width: 80%;
-            }
         }
 
         @media (max-width: 767px) {
@@ -313,6 +307,7 @@
             nav ul {
                 flex-direction: column;
                 align-items: center;
+                display: none;
             }
 
             nav ul li {
@@ -322,24 +317,56 @@
             nav ul li a {
                 font-size: 1rem;
             }
+            nav img{
+                width: 30vw;
+                height: 5vh;
+                margin-top: -1vw;
+            }
+            #join {
+                margin-top: -1vw;
+                margin-right:8vw;
+                width: 13vw;
+            }
+            .form-section{
+                margin-left: 2vw;
+            }
+            .form-group input{
+                width: 85vw;
+            }
+            .form-group select{
+                width: 80vw;
+            }
+            .radio-group{
+                display: grid;
+                grid-template-columns: repeat(3, minmax(54px, 0.3fr));
+                gap: 20px;
+            }
+            .form-section textarea{
+                width: 85vw;
+            }
+            .form-group button{
+                width: 60vw;
+                margin-left:20vw ;
+            }
         }
     </style>
 </head>
 <body>
 <nav class="head">
-    <img src="../logo.png" alt="logo" style="z-index: 1;" onclick="location.href='../index.html';">
+    <img src="../media/logo.png" alt="logo" style="z-index: 1;" onclick="location.href='../index.html';">
 
     <ul>
         <a href="../index.html">Home</a>
-        <a href="../contact/contact.html">Contact</a>
-        <a href="../About/about.html">About</a>
-        <button id="join" class="bg-white rounded-lg text-black w-12"
-                onclick="location.href='../sign/sign.html';"><b>Login</b></button>
+        <a href="../pages/contact.html">Contact</a>
+        <a href="../pages/about.html">About</a>
+
     </ul>
+    <button id="join" class="bg-white rounded-lg text-black w-12"
+            onclick="location.href='../pages/sign.html';"><b>Login</b></button>
 </nav>
 <div class="container">
     <div class="header">
-        <img src="../logo.png" alt="IEEE Logo">
+        <img src="../media/logo.png" alt="IEEE Logo">
         <h1>Committee Selection Application Form</h1>
         <p>Please fill out the form below to apply for a committee position in the IEEE student branch.</p>
     </div>
@@ -381,11 +408,11 @@
             <h2>Committee Preferences</h2>
             <div class="form-group">
                 <div class="radio-group">
-                    <label><input type="radio" name="committee" value="Technical" required> Technical Committee</label>
-                    <label><input type="radio" name="committee" value="Event Management" required> Event Management</label>
-                    <label><input type="radio" name="committee" value="Public Relations" required> Public Relations</label>
-                    <label><input type="radio" name="committee" value="Marketing" required> Marketing Committee</label>
-                    <label><input type="radio" name="committee" value="Human Resources" required> Human Resources</label>
+                    <div><label><input type="radio" name="committee" value="Technical" required> Technical Committee</label></div>
+                    <div><label><input type="radio" name="committee" value="Event Management" required> Event Management</label></div>
+                    <div><label><input type="radio" name="committee" value="Public Relations" required> Public Relations</label></div>
+                    <div><label><input type="radio" name="committee" value="Marketing" required> Marketing Committee</label></div>
+                    <div><label><input type="radio" name="committee" value="Human Resources" required> Human Resources</label></div>
                 </div>
             </div>
         </div>
@@ -422,6 +449,5 @@
         </div>
     </form>
 </div>
-<script src="file.js"></script>
 </body>
 </html>

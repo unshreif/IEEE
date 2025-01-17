@@ -60,8 +60,7 @@ nav ul{
 }
 #logo{
     margin-top:0vw;
-    width: 5vw;
-    height: 5vw;
+    height: 4vw;
     z-index: 1;
 }
 
@@ -112,7 +111,7 @@ nav ul li a {
     border-radius: 10px;
     width: 100%;
     max-width: 400px;
-    margin-top: 20vw;
+    margin-top: 10vw;
 }
 
 .login-container h1 {
@@ -184,6 +183,7 @@ nav ul li a {
     text-decoration: underline;
 }
 
+
 @media (max-width: 768px) {
     .navbar .nav-links {
         flex-direction: column;
@@ -197,7 +197,6 @@ nav ul li a {
 
     .login-container {
         width: 90%;
-        margin-top: 30vw;
     }
 
     .form-group input,
@@ -218,7 +217,7 @@ nav ul li a {
     }
 
     nav img{
-        width: 20vw;
+        width: 25vw;
         height: 10vw;
     }
     .navbar .nav-links {
@@ -230,8 +229,9 @@ nav ul li a {
     }
 
     .login-container {
-        width: 100%;
+        width: 90%;
         margin-top: 40vw;
+        margin-left: -4vw;
     }
 
     .form-group label {
@@ -245,5 +245,8 @@ nav ul li a {
 
     .btn-login {
         font-size: 0.9rem;
+    }
+    nav ul{
+        margin-top:4vw;
     }
 }

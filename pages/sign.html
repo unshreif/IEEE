@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="../styles/sign.css">
 </head>
 <body>
-<nav class="navbar">
-    <div class="logo">
-        <img src="../logo.png" alt="Logo">
-    </div>
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+<nav class="head">
+    <img src="../media/logo.png" alt="logo"  id="logo" style="z-index: 1;" onclick="location.href='../index.html';">
+
+    <ul>
+        <a href="../index.html">Home</a>
+        <a href="./contact.html">Contact</a>
+        <button id="join" class="bg-white rounded-lg text-black w-12"
+                onclick="location.href='../pages/join.html';"><b>JOIN</b></button>
     </ul>
 </nav>
 <div class="login-container">
@@ -43,7 +43,7 @@
 
     </form>
     <div class="login-link">
-        <a href="../join/join.html">Not a member ? Join IEEE NOW </a>
+        <a href="../pages/join.html">Not a member ? Join IEEE NOW </a>
     </div>
 </div>
 </body>
