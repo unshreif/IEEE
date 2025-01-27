@@ -88,6 +88,7 @@ nav {
         width: 95%;
         margin: 0 auto;
         backdrop-filter: blur(1px);
+
     }
 
     .logo img{
@@ -529,6 +530,7 @@ nav {
         height: 2.5vw;
         filter: none;
         backdrop-filter: blur(1px);
+        width: 96.4%;
     }
     .head img{
         width: 20vw;
