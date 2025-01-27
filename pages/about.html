@@ -6,74 +6,120 @@
     <title>About us</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
     </style>
 </head>
 <body>
-<div>
-<nav class="head">
-    <img src="../media/logo2.png" alt="logo" style="z-index: 1;" onclick="location.href='../index.html';">
-
-    <ul>
-        <a href="./coming.html">Commitiees</a>
-        <a href="./coming.html">Blog</a>
-        <a href="./coming.html">Events</a>
-        <a href="./coming.html">Contact</a>
-    </ul>
-    <button id="join" class="bg-white rounded-lg text-black w-12"
-            onclick="location.href='./pages/join.html';"><b>JOIN</b></button>
+<nav>
+    <div class="logo"><img src="https://ucarecdn.com/aba9b49e-9647-4bb8-83aa-06789ccca97d/logo2.png" alt="IEEE KSB Logo"></div>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="menu">
+        <a href="../index.html">Home</a>
+        <a href="../pages/about.html">About</a>
+        <a href="../pages/coming.html">Events</a>
+        <a href="../pages/coming.html">Contact</a>
+    </div>
 </nav>
-</div>
 
 
 <div class="container">
     <section class="main-content">
-        <img src="../media/logo.png">
-        <p>IEEE Kafr El-Sheikh Student Branch is a part of the global IEEE organization. It aims to support engineering students at Kafr El-Sheikh University by organizing workshops, events, and initiatives to enhance their technical and professional skills.</p>
+        <img src="https://ucarecdn.com/ace974e7-2c04-4dca-acd9-fa533452b844/b856728b049943e49f6bc3477787e2ad.png">
+        <p class="main-txt">IEEE Kafr El-Sheikh Student Branch is a part of the global IEEE organization. It aims to support engineering students at Kafr El-Sheikh University by organizing workshops, events, and initiatives to enhance their technical and professional skills.</p>
     </section>
 
-    <section class="vision-mission">
-        <div class="vision">
-            <h2>Vision</h2>
-            <p>To foster technological innovation and excellence for the benefit of humanity, while empowering students at Kafr El-Sheikh University with essential skills to excel in their careers.</p>
+    <section class="vision-mission2">
+        <div class="vision2">
+            <h2 class="txt">Vision</h2>
+            <p class="main-txt">To foster technological innovation and excellence for the benefit of humanity, while empowering students at Kafr El-Sheikh University with essential skills to excel in their careers.</p>
         </div>
-        <div class="mission">
-            <h2>Mission</h2>
-            <p>Our mission is to organize impactful workshops, events, and initiatives that bridge the gap between academic knowledge and practical application, nurturing a community of innovators and leaders.</p>
+        <div class="mission2">
+            <h2 class="txt">Mission</h2>
+            <p class="main-txt">Our mission is to organize impactful workshops, events, and initiatives that bridge the gap between academic knowledge and practical application, nurturing a community of innovators and leaders.</p>
         </div>
     </section>
-    <h2>Our Team</h2>
+    <h2 class="txt">Our Team</h2>
     <section class="team">
         <div class="team-member">
             <img src="../media/mohsen.png" alt="Mohamed Mohsen">
-            <h3>Chairman</h3>
-            <p>Mohamed Mohsen</p>
+            <h3 class="sub-txt">Chairman</h3>
+            <p class="main-txt">Mohamed Mohsen</p>
         </div>
         <div class="team-member">
             <img src="../media/fahmy.png" alt="Ahmed Fahmy">
-            <h3>Secretary</h3>
-            <p>Ahmed Fahmy</p>
+            <h3 class="sub-txt">Secretary</h3>
+            <p class="main-txt">Ahmed Fahmy</p>
         </div>
         <div class="team-member">
             <img src="../media/haroun.png" alt="Abdelrahman Haroun">
-            <h3>Technical Vice Chairman</h3>
-            <p>Abdelrahman Haroun</p>
+            <h3 class="sub-txt">Technical Vice Chairman</h3>
+            <p class="main-txt">Abdelrahman Haroun</p>
         </div>
         <div class="team-member">
             <img src="../media//elashowah.png" alt="Mohamed Elashwah">
-            <h3>Managerial Vice Chairman</h3>
-            <p>Mohamed Elashwah</p>
+            <h3 class="sub-txt">Managerial Vice Chairman</h3>
+            <p class="main-txt">Mohamed Elashwah</p>
         </div>
         <div class="team-member">
             <img src="../media/rana.png" alt="Rana Eissa">
-            <h3>Treasurer</h3>
-            <p>Rana Eissa</p>
+            <h3 class="sub-txt">Treasurer</h3>
+            <p class="main-txt">Rana Eissa</p>
         </div>
     </section>
-<footer class="footer">
-    <p>&copy; 2024 IEEE Kafr El-Sheikh. All Rights Reserved.</p>
-</footer>
 </div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <img src="https://ucarecdn.com/31ea2fbe-2bb1-4102-8274-4e0b8ac61a0a/image.png" alt="IEEE Logo" class="footer-logo">
+            <p>IEEE Student Branch</p>
+            <p>Kafr El-Sheikh University</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Kafr El-Sheikh university, Kafr el sheikh</p>
+            <p><i class="fas fa-envelope"></i> contact@Ieee-ksb.com</p>
+            <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Useful Links</h3>
+            <ul class="footer-links" type="none">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="../pages/coming.html">Events</a></li>
+                <li><a href="../pages/about.html">Team</a></li>
+                <li><a href="../pages/coming.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/IEEE.KUSB/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ieee_ksb/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/ieee-kafrelshiekh-student-branch/posts/?feedView=all"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@ieee.ksb"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+<div class="footer-bottom">
+    <p>&copy; 2025 IEEE KSB, All rights reserved</p>
+</div>
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
 </body>
 </html>
