@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering Innovation Through Collaboration</title>
+    <link rel="icon" href="../media/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        :root {
+            --primary-blue: #0A2472;
+            --secondary-blue: #001B48;
+            --accent-blue: #7EC8E3;
+            --light-gray: #F8F9FA;
+            --dark-text: #212529;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background: var(--light-gray);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav {
+            width: 100%;
+        }
+
+        .main-container {
+            max-width: 90%;
+            margin: 2rem auto;
+            padding: 0 1rem;
+
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        .article-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-blue);
+        }
+
+        .meta-info {
+            display: flex;
+            gap: 1.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .article-content {
+            padding: 2rem;
+            border-radius: 8px;
+
+        }
+
+        .article-content h2 {
+            color: var(--primary-blue);
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .article-image {
+            width: 60%;
+            height: 700px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .author-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+
+        .author-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-blue);
+        }
+
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .author-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="https://ucarecdn.com/aba9b49e-9647-4bb8-83aa-06789ccca97d/logo2.png" alt="IEEE KSB Logo" onclick="location.href='../index.html'"></div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu">
+            <a href="../index.html">Home</a>
+            <a href="../pages/about.html">About</a>
+            <a href="../pages/events.html">Events</a>
+            <a href="../pages/contact.html">Contact</a>
+        </div>
+    </nav>
+
+<main class="main-container">
+    <article>
+        <header class="article-header">
+            <h1 class="article-title">Empowering Innovation Through Collaboration</h1>
+            <div class="meta-info">
+                <span>Published: October 15, 2023</span>
+                <span>Author: Muhmd Samy</span>
+                <span>Category: Public relations</span>
+            </div>
+        </header>
+
+        <div class="article-content">
+            <img src="../media/blog%201.png" alt="article image" class="article-image">
+
+            <h2>The Foundation of Innovation</h2>
+            <p>In an era defined by rapid technological advancements, collaboration has become the cornerstone of innovation. Organizations like IEEE KSB are paving the way for groundbreaking achievements by fostering a spirit of teamwork and knowledge-sharing among professionals, academics, and enthusiasts. By uniting diverse minds and perspectives, IEEE KSB is driving progress across various fields.</p>
+
+            <h2>Collaborative Achievements</h2>
+            <p>IEEE KSB has spearheaded numerous initiatives that highlight the power of collaboration. From hosting international conferences to organizing technical workshops, the platform provides opportunities for individuals to exchange ideas and work on cutting-edge projects. Through these efforts, members contribute to advancements in fields like artificial intelligence, renewable energy, and quantum technologies.</p>
+
+            <h2>Building a Better Future</h2>
+            <p>By connecting innovators and providing them with the resources they need, IEEE KSB is empowering individuals to tackle global challenges. Whether it's addressing climate change or enhancing cybersecurity, the collective efforts of IEEE KSB members are shaping a better and more sustainable future. As these collaborative networks grow, they continue to unlock new possibilities for innovation and societal impact.
+
+            </p></div>
+
+        <div class="author-card">
+            <img src="../media/logo2.png" alt="Author" class="author-image">
+            <div>
+                <h3 style="color: var(--primary-blue); margin-bottom: 0.5rem;">Muhmd Samy</h3>
+                <p style="color: #6c757d;">IEEE Frontend Member</p>
+            </div>
+        </div>
+    </article>
+</main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="https://ucarecdn.com/31ea2fbe-2bb1-4102-8274-4e0b8ac61a0a/image.png" alt="IEEE Logo" class="footer-logo">
+                <p>IEEE Student Branch</p>
+                <p>Kafr El-Sheikh University</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Kafr El-Sheikh university, Kafr el sheikh</p>
+                <p><i class="fas fa-envelope"></i> contact@Ieee-ksb.com</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul class="footer-links" type="none">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/events.html">Events</a></li>
+                    <li><a href="../pages/about.html">Team</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/IEEE.KUSB/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ieee_ksb/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/ieee-kafrelshiekh-student-branch/posts/?feedView=all"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.tiktok.com/@ieee.ksb"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2025 IEEE KSB, All rights reserved</p>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

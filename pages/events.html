@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../media/logo2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #FAFAFA;
+            color: #2D3748;
+        }
+nav{
+    width: 100%;
+}
+
+        .nav-links a:hover {
+            color: #1A365D;
+        }
+
+        .head {
+            background: linear-gradient(135deg,  #0a192f 0%,  #0a192f 100%);
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+
+        .head h1 {
+            color: #FFFFFF;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .head p {
+            color: #CBD5E0;
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .all-events {
+            max-width: 1200px;
+            margin: -2rem auto 4rem;
+            padding: 0 2rem;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card1 {
+            background: #FFFFFF;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card1:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .evimage {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 4px solid ;
+            background-color: #0a192f ;
+        }
+
+        .content {
+            padding: 1.5rem;
+        }
+
+        .date {
+            color: #718096;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        footer{
+            background-color:#0a192f;
+        }
+
+        .title {
+            color: #1A365D;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .details {
+            color: #4A5568;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            background: #1A365D;
+            color: #FFFFFF;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #2D3748;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="logo"><img src="https://ucarecdn.com/aba9b49e-9647-4bb8-83aa-06789ccca97d/logo2.png" alt="IEEE KSB Logo" onclick="location.href='../index.html'"></div>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="menu">
+        <a href="../index.html">Home</a>
+        <a href="../pages/about.html">About</a>
+        <a href="../pages/events.html">Events</a>
+        <a href="../pages/contact.html">Contact</a>
+    </div>
+</nav>
+
+<section class="head">
+    <div class="head-content">
+        <h1>Upcoming Events</h1>
+        <p>Explore upcoming technical events, workshops, and conferences.</p>
+    </div>
+</section>
+
+<main class="all-events">
+    <div class="events-grid">
+        <article class="card1">
+            <img src="../media/event%201.jpg"
+                 alt="mega tech" class="evimage">
+            <div class="content">
+                <div class="date">April 20, 2024 | IPA Center</div>
+                <h3 class="title">Mega Tech</h3>
+                <p class="details">We are excited to announce the schedule for the sessions and workshops of the Mega Tech event, presented by IEEE in collaboration with the International Professional Academy for Training (IPA). Our kickoff will be next Saturday, April 20th</p><a href="../pages/event1.html" class="button">Register Now</a>
+            </div>
+        </article>
+
+        <!-- Event 2 -->
+        <article class="card1">
+            <img src="../media/event%202.jpg"
+                 alt="Tech" class="evimage">
+            <div class="content">
+                <div class="date">May 25, 2024 | Cairo</div>
+                <h3 class="title">Techne Summit</h3>
+                <p class="details">We're thrilled to announce our collaboration with Techne Summit Cairo 2024!Mark your calendars for May 25th to 27th, as we bring you an array of captivating content across multiple industry-focused tracks.</p>
+                <a href="../pages/event2.html" class="button">Learn More</a>
+            </div>
+        </article>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <img src="https://ucarecdn.com/31ea2fbe-2bb1-4102-8274-4e0b8ac61a0a/image.png" alt="IEEE Logo" class="footer-logo">
+            <p>IEEE Student Branch</p>
+            <p>Kafr El-Sheikh University</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Kafr El-Sheikh university, Kafr el sheikh</p>
+            <p><i class="fas fa-envelope"></i> contact@Ieee-ksb.com</p>
+            <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Useful Links</h3>
+            <ul class="footer-links" type="none">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/events.html">Events</a></li>
+                <li><a href="../pages/about.html">Team</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/IEEE.KUSB/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ieee_ksb/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/ieee-kafrelshiekh-student-branch/posts/?feedView=all"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@ieee.ksb"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+<div class="footer-bottom">
+    <p>&copy; 2025 IEEE KSB, All rights reserved</p>
+</div>
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

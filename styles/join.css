@@ -231,4 +231,5 @@ input.invalid, textarea.invalid, select.invalid {
 
 footer{
     width: 100% !important;
+    background-color:#0a192f;
 }
