@@ -88,7 +88,6 @@ nav {
         width: 95%;
         margin: 0 auto;
         backdrop-filter: blur(1px);
-
     }
 
     .logo img{
@@ -514,38 +513,39 @@ nav {
 
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 5rem;
+        font-size: 6rem; /* Adjusted font size for better readability */
     }
     .hero-content p {
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
     nav {
         flex-direction: column;
         align-items: center;
         position: sticky;
         top: 0;
-        margin: 0;
-        background-color: transparent;
+        background-color: #2c3e50; /* Added background color for better visibility */
         padding: 10px 10px;
         z-index: 1000;
-        height: 2.5vw;
+        height: auto; /* Adjusted height to auto */
         filter: none;
         backdrop-filter: blur(1px);
-        width: 96.4%;
+        width: 95.5%; /* Adjusted width to 100% */
     }
-    .head img{
+    .head img {
         width: 20vw;
         height: 20vh;
         display: block !important;
     }
     nav ul {
-        display: none;
+        display: flex; /* Changed to flex for better layout */
+        flex-direction: column; /* Added flex-direction column */
+        align-items: center; /* Centered items */
     }
     nav ul li {
         margin-bottom: 10px;
     }
-    #omv{
-        font-size:7vw;
+    #omv {
+        font-size: 7vw;
     }
 
     .stats {
@@ -582,12 +582,11 @@ nav {
         width: 90%;
         margin-bottom: 20px;
     }
-    #join{
-        width:15vw;
+    #join {
+        width: 15vw;
         margin-top: 2vw;
-        background-color: #0a192f ;
+        background-color: #0a192f;
     }
-
 }
 
 .footer {
